@@ -1,5 +1,7 @@
 pipeline {
-    agent any 
+    agent {
+         label 'mds6800_pclint'
+    }
     stages {
         stage('Build') {
             steps {
